@@ -1,0 +1,69 @@
+
+  .swiper-wrapper{
+    width:100vw;
+  }
+  .swiper-pagination{
+    bottom:40px;
+    margin-bottom:30px;
+  }
+  body{
+    width:100vw;
+  }
+  main{
+    width:100%;
+  }
+  .a{
+    width:100vw;
+    height:610px;
+    position:relative;
+  }
+  .lists{
+    display:flex;
+    justify-content:space-around;
+  }
+  .list{
+    text-decoration: none;
+    font-size:20px;
+    color:black;
+  }
+  .top-icon{
+    margin-left:15px;
+    height:70px;
+  }
+  .item-contents{
+    text-align:center;
+  }
+  .name{
+    margin-left:80px;
+    margin-top:60px;
+    position:absolute;
+    color:white;
+    z-index: 10;
+    
+  }
+  h1{
+    font-family:'Times New Roman', Times, serif;
+  }
+  .cafe-name{
+    display:flex;
+  }
+  .log{
+    margin-left:70vw;
+    margin-top:30px;
+    text-decoration: none;
+    font-size:20px;
+  }
+
+
+  .footer{
+    width:100vw;
+    color:black;
+    text-align:center;
+  }
+ 
+  .footer-link{
+    text-decoration: none;
+    color:black;
+    font-size:1.5vw;
+  }
+  

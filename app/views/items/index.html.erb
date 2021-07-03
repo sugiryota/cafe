@@ -1,16 +1,55 @@
-<div class='main'>
-  <div class="cafe-form">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
-  </div>
-  <div class="rank-container">
-    <div class='item-contents'>
+<%=render "shared/header"%>
+ <main>
+   <div id="slide">
+    <div class="swiper-container">
+      <div class="name">
+      <h1>小さな幸せへようこそ</h1>
+     </div>
+     <ul class="swiper-wrapper">
+      <!-- スライドする画像 -->
+      <li class="swiper-slide"><p><img src="assets/mame.jpg" class="a" alt="イギリス"></p></li>
+      <li class="swiper-slide"><p><img src="assets/coffee.jpg" class="a" alt="わんちゃん"></p></li>
+      <li class="swiper-slide"><p><img src="assets/humberger.jpg" class="a" alt="レトロな写真"></p></li>
+      <!-- /スライドする画像 -->
+     </ul>
+     <div class="swiper-pagination"></div>
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next"></div>
+    </div>
+   </div>
+   <div class='item-contents'>
       <h2 class='title'>Pick Up</h2>
       <div class="subtitle" >
-        top access reviews
+        いつものメニュー
       </div>
-    </div>
-    
-  </div>
-</div> 
+          
+          
+          
+   </div>
+  </main>
+  <%=render "shared/footer"%>
+
+
+<script type="text/javascript">
+  var mySwiper = new Swiper ('.swiper-container', {
+   slidesPerView:1,//画像を何枚表示するか
+   spaceBetween: 30,//何ピクセル画像の間隔をあけるか
+   effect: "fade",
+   //自動再生する場合
+   autoplay: {
+   delay: 3000, //3秒後に次の画像に代わる
+   },
+   loop: true,//最後の画像までいったらループする
+   //ページネーションをつける場合
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+   },
+   //左右のナビゲーションをつける場合
+   navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+   }
+  });
+</script>

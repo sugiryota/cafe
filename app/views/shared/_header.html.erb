@@ -1,7 +1,12 @@
 <header class="top-page-header">
   <div class="cafe-name">
     <%= link_to image_tag("753737.png", class:"top-icon"), "/" %>
-    <%= link_to "login","#",class:"log" %>
+    <% if user_signed_in?%>
+    <%= link_to "logout", destroy_user_session_path, method: :delete ,class:"log" %>
+    <%else%>
+    <%= link_to "admin-login",new_user_session_path,class:"log" %>
+    <%end%>
+    
   </div>
   <div class="lists">
     <div class="menu">
@@ -11,7 +16,7 @@
     <%=link_to "menu","#" ,class:"list" %>
     </div>
     <div class="menu">
-    <%=link_to "shop","#" ,class:"list" %>
+    <%=link_to "online shop","#" ,class:"list" %>
     </div>
     <div class="menu">
     <%=link_to "access","#" ,class:"list"%>

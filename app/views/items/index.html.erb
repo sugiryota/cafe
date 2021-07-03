@@ -3,14 +3,12 @@
    <div id="slide">
     <div class="swiper-container">
       <div class="name">
-      <h1>小さな幸せへようこそ</h1>
+      <h2>On paljon pienta onnea</h2>
      </div>
      <ul class="swiper-wrapper">
-      <!-- スライドする画像 -->
-      <li class="swiper-slide"><p><img src="assets/mame.jpg" class="a" alt="イギリス"></p></li>
+      <li class="swiper-slide"><p><img src="assets/ie.jpg" class="a" alt="イギリス"></p></li>
       <li class="swiper-slide"><p><img src="assets/coffee.jpg" class="a" alt="わんちゃん"></p></li>
       <li class="swiper-slide"><p><img src="assets/humberger.jpg" class="a" alt="レトロな写真"></p></li>
-      <!-- /スライドする画像 -->
      </ul>
      <div class="swiper-pagination"></div>
      <div class="swiper-button-prev"></div>
@@ -18,35 +16,68 @@
     </div>
    </div>
    <div class='item-contents'>
-      <h2 class='title'>Pick Up</h2>
       <div class="subtitle" >
         いつものメニュー
       </div>
+      <ul class='item-lists'>
+      
+        <%@items.each do |item|%>
+        <li class='list'>
+          <%= link_to root_path,class:"link" do %>
+          
+          <div class='item-img-content'>
+                
+            <%if item.image.attached? %>
+              <%= image_tag item.image, class: "item-img"  %>
+            <%else%>
+              <%= image_tag 'coffee.jpg', class: "item-img"  %>
+            <%end%> 
+                 
+          </div>
+          <div class="info">
+            <div class='item-info'>
+              <%= item.name%>   
+            </div>
+          <% end %>
+            <div class='item-price'>
+              <span class="sell-yen">¥</span> <%= item.price%>   
+            </div>
+          </div>  
+              
+          
+        </li>
+        <%end%>
+      </ul>
           
           
           
    </div>
   </main>
+  <%if user_signed_in?%>
+  <%= link_to new_item_path, class: 'item-btn' do %>
+    <%= image_tag 'pen.png' , size: '79x50' ,class: "item-btn-icon" %>
+  <% end %> 
+  <%end%>
   <%=render "shared/footer"%>
 
 
 <script type="text/javascript">
   var mySwiper = new Swiper ('.swiper-container', {
-   slidesPerView:1,//画像を何枚表示するか
-   spaceBetween: 30,//何ピクセル画像の間隔をあけるか
+   slidesPerView:1,
+   spaceBetween: 30,
    effect: "fade",
-   //自動再生する場合
+   
    autoplay: {
-   delay: 3000, //3秒後に次の画像に代わる
+   delay: 3000, 
    },
-   loop: true,//最後の画像までいったらループする
-   //ページネーションをつける場合
+   loop: true,
+ 
    pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
    },
-   //左右のナビゲーションをつける場合
+  
    navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

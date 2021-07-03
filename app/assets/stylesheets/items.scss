@@ -1,4 +1,7 @@
-
+li{
+  list-style: none;
+}
+  
   .swiper-wrapper{
     width:100vw;
   }
@@ -41,17 +44,74 @@
     z-index: 10;
     
   }
-  h1{
-    font-family:'Times New Roman', Times, serif;
+  h2{
+    font-weight: lighter;
   }
   .cafe-name{
     display:flex;
   }
   .log{
-    margin-left:70vw;
+    margin-left:55vw;
     margin-top:30px;
     text-decoration: none;
     font-size:20px;
+  }
+  .item-img {
+    width: 45vh;
+    height: 33vh;
+   
+  
+  }
+  .item-contents{
+    margin-top:50px;
+  }
+  .item-lists{
+    display:flex;
+    justify-content: space-around;
+    margin-top:60px;
+  }
+  .item-info{
+    font-size:2.3vw;
+  }
+  .info{
+    display:flex;
+    justify-content: center;
+  }
+  .item-price{
+    margin-left:40px;
+    margin-top:12px;
+  }
+  .link{
+    text-decoration: none;
+    color:black;
+  }
+
+
+
+
+  .item-btn {
+    width: 80px;
+    height:55px;
+    background: rgba(27, 41, 189, 0.5);
+    text-align: center;
+    border-radius: 10%;
+    bottom: 32px;
+    right: 32px;
+    position: fixed;
+    z-index: 10;
+    padding: 10px ;
+    text-decoration: none;
+  }
+  .item-btn-text {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  .swiper-button-prev ,.swiper-button-next{
+    color:grey;
+
   }
 
 

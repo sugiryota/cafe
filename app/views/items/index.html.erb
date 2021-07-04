@@ -21,30 +21,72 @@
       </div>
       <ul class='item-lists'>
       
-        <%@items.each do |item|%>
+        <li class='list'>
+          <%= link_to "/items/alway/2",class:"link" do %>
+          
+          <div class='item-img-content'>
+              <%= link_to image_tag("a.jpg", class:"item-img"), "/items/alway/2" %> 
+          </div>
+          <div class="info">
+            <div class='item-info'>
+              <span>Drink</span>   
+            </div>
+          <% end %>
+            <div class='item-price'>
+              <span class="sell-yen">¥350~</span>   
+            </div>
+          </div>  
+        </li>
         <li class='list'>
           <%= link_to root_path,class:"link" do %>
           
           <div class='item-img-content'>
-                
-            <%if item.image.attached? %>
-              <%= image_tag item.image, class: "item-img"  %>
-            <%else%>
-              <%= image_tag 'coffee.jpg', class: "item-img"  %>
-            <%end%> 
-                 
+              <%= link_to image_tag("food.png", class:"item-img"), "/items/alway/3" %> 
           </div>
           <div class="info">
             <div class='item-info'>
-              <%= item.name%>   
+              <span>food</span>   
             </div>
           <% end %>
             <div class='item-price'>
-              <span class="sell-yen">¥</span> <%= item.price%>   
+              <span class="sell-yen">¥900~</span>   
             </div>
           </div>  
-              
+        </li>
+        <li class='list'>
+          <%= link_to root_path,class:"link" do %>
           
+          <div class='item-img-content'>
+              <%= link_to image_tag("coffee.jpg", class:"item-img"), "/items/alway/4" %>  
+          </div>
+          <div class="info">
+            <div class='item-info'>
+              <span>Sweets</span>   
+            </div>
+          <% end %>
+            <div class='item-price'>
+              <span class="sell-yen">¥450~</span>   
+            </div>
+          </div>  
+        </li>
+       
+      </ul>
+          
+          
+          
+   </div>
+   <div class='item-contents'>
+      <div class="subtitle" >
+        月メニュー
+      </div>
+      <ul class='item-lists'>
+        <li class='list'>
+          <%= link_to root_path,class:"link" do %>
+          <h2>7月</h2>
+          <div class='item-img-content'>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/" %>
+                 
+          </div>  
         </li>
         <%end%>
       </ul>

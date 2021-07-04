@@ -9,15 +9,35 @@
     <h2 class="items-sell-title">レビューの情報を入力</h2>
     
     <%= form_with model:@item, local: true do |f| %>
+    <div class="items-detail">
+      <div class="weight-bold-text">
+      販売別
+      
+      </div>
+      <div class="form">
+        
+        <%= f.collection_select(:online_id, Online.all, :id, :name, {}, {class:"select-box", id:"item-online"}) %>
+      </div>
+    </div> 
 
     <div class="items-detail">
       <div class="weight-bold-text">
-      カテゴリー
+      月設定
       
       </div>
       <div class="form">
         
         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+      </div>
+    </div> 
+    <div class="items-detail">
+      <div class="weight-bold-text">
+      いつものメニュー
+      
+      </div>
+      <div class="form">
+        
+        <%= f.collection_select(:alway_id, Alway.all, :id, :name, {}, {class:"select-box", id:"item-alway"}) %>
       </div>
     </div>   
     <div class="img-upload">

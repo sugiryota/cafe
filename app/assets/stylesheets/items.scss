@@ -36,7 +36,7 @@ li{
   .item-contents{
     text-align:center;
   }
-  .name{
+  .nam{
     margin-left:80px;
     margin-top:60px;
     position:absolute;
@@ -133,5 +133,8 @@ li{
     text-decoration: none;
     color:black;
     font-size:1.5vw;
+  }
+  .wrap{
+    overflow: hidden;
   }
   

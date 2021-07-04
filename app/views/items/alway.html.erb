@@ -1,1 +1,112 @@
-<h1>イェhイェh</h1>
+<% if @alway=="2,3,4" %>
+<div class="drink">
+  <h1>DRINKS</h1>
+</div> 
+<div class="menu"> 
+  <div class="coffee">
+    <div class="na">COFFEE</div>
+    <%= link_to image_tag("a.jpg", class:"item-img"), "/items/alway/2,3,4" %> 
+  </div>
+  <div class="menu-d">
+    <%@coffee.each do |coffee|%>
+      <div class="mepr">
+        <div class="me">
+          <%= link_to coffee.name,item_path(coffee.id),class:"mena" %>
+          
+        </div> 
+        <div class="price"> 
+          <span class="pr">¥<%=coffee.price%></span>
+        </div>
+      </div>  
+    <%end%>
+  </div>
+</div>
+<div class="menu"> 
+  <div class="coffee">
+    <div class="na">TEA</div>
+    <%= link_to image_tag("tea.jpg", class:"item-img"), "/items/alway/2,3,4" %> 
+  </div>
+  <div class="menu-d">
+    <%@tea.each do |tea|%>
+      <div class="mepr">
+        <div class="me">
+          <%= link_to tea.name,item_path(tea.id),class:"mena" %>
+        </div> 
+        <div class="price"> 
+          <span class="pr">¥<%=tea.price%></span>
+        </div>
+      </div>  
+    <%end%>
+  </div>
+</div>
+<div class="menu"> 
+  <div class="coffee">
+    <div class="na">OTHERS</div>
+    <%= link_to image_tag("other.jpg", class:"item-img"), "/items/alway/2,3,4" %> 
+  </div>
+  <div class="menu-d">
+    <%@others.each do |other|%>
+      <div class="mepr">
+        <div class="me">
+          <%= link_to other.name,item_path(other.id) ,class:"mena" %>
+        </div> 
+        <div class="price"> 
+          <span class="pr">¥<%=other.price%></span>
+        </div>
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+
+<% if @alway=="5" %>
+<div class="drink">
+  <h1>FOODS</h1>
+</div> 
+<div class="menu"> 
+  <div class="coffee">
+    <div class="na">FOOD</div>
+    <%= link_to image_tag("food.png", class:"item-i"), "/items/alway/5" %> <br/>
+    <%= link_to image_tag("humberger.jpg", class:"item-i"), "/items/alway/5" %> 
+  </div>
+  <div class="menu-d">
+    <%@food.each do |food|%>
+      <div class="mepr">
+        <div class="me">
+          <%= link_to food.name,item_path(food.id),class:"mena" %>
+          
+        </div> 
+        <div class="price"> 
+          <span class="pr">¥<%=food.price%></span>
+        </div>
+      </div>  
+    <%end%>
+  </div>
+</div>
+
+<%end%>
+<% if @alway=="6" %>
+<div class="drink">
+  <h1>DESERTS</h1>
+</div> 
+<div class="menu"> 
+  <div class="coffee">
+    <div class="na">DESERT</div>
+    <%= link_to image_tag("cake.png", class:"item-img"), "/items/alway/6" %> 
+  </div>
+  <div class="menu-d">
+    <%@desert.each do |desert|%>
+      <div class="mepr">
+        <div class="me">
+          <%= link_to desert.name,item_path(desert.id),class:"mena" %>
+          
+        </div> 
+        <div class="price"> 
+          <span class="pr">¥<%=desert.price%></span>
+        </div>
+      </div>  
+    <%end%>
+  </div>
+</div>
+
+<%end%>

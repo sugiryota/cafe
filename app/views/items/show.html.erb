@@ -1,0 +1,21 @@
+<%=render "shared/header"%>
+<div class="item-all">
+<div class="item-content">
+  <div class="item-img-cont">
+    <%= image_tag @item.image, class: "item-box-img"  %> 
+  </div>
+</div>
+<div class="name">
+  <%= @item.name %>
+</div> 
+<table class="detail-table">
+  <tbody>
+    <tr>
+      <td class="detail-value detail-text" id="text"><%= @item.text %></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<%=render "shared/footer"%>
+            
+            

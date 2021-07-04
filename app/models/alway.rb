@@ -1,9 +1,11 @@
 class Alway < ActiveHash::Base
   self.data = [
     { id: 1, name: '--' },
-    { id: 2, name: 'Drink' },
-    { id: 3, name: 'Food' },
-    { id: 4, name: 'Sweets' }
+    { id: 2, name: 'Drink(coffee)' },
+    { id: 3, name: 'Drink(tea)' },
+    { id: 4, name: 'Drink(others)' },
+    { id: 5, name: 'Food' },
+    { id: 6, name: 'Sweets' }
     
   ]
 

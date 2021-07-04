@@ -1,0 +1,41 @@
+.menu{
+  display:flex;
+  margin-top:70px;
+}
+.menu-d{
+  margin-left:50px;
+  margin-top:45px;
+}
+.me{
+  width:25vw;
+  
+}
+.mena{
+  text-decoration:none;
+  color:black;
+}
+
+.price{
+  margin-left:150px;
+}
+.mepr{
+  display:flex;
+  margin-bottom:10px;
+  font-size:20px;
+}
+.drink{
+  text-align:center;
+  font-size:21px;
+}
+.na{
+  height:25px;
+  font-size:25px;
+  font-weight: 700;
+  margin-bottom:20px;
+}
+.item-i{
+  width: 45vh;
+  height: 33vh;
+  margin-bottom:30px;
+}
+

@@ -6,7 +6,7 @@ class Item < ApplicationRecord
 
   belongs_to :user
 
-  validates :name, :text,:price,:online_id,presence: true
+  validates :name, :text,:price,:online_id,:image,presence: true
   has_one_attached :image
 
   validates :online_id, numericality: { other_than: 1 } 

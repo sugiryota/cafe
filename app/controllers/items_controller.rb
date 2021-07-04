@@ -4,11 +4,17 @@ class ItemsController < ApplicationController
     
   end
   def alway
-    @drink = Item.where(alway_id: '2')
-    @food = Item.where(alway_id: '3')
-    @sweets = Item.where(alway_id: '4')
+    @coffee = Item.where(alway_id: '2',online_id: '3')
+    @tea = Item.where(alway_id: '3',online_id: '3')
+    @others = Item.where(alway_id: '4',online_id: '3')
+    @food = Item.where(alway_id: '5',online_id: '3')
+    @desert= Item.where(alway_id: '6',online_id: '3')
     @alway = params[:alway_id]
   end
+  def show
+    @item = Item.find(params[:id])
+  end
+
   def new
     @item = Item.new
   end

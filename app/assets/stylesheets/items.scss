@@ -72,7 +72,7 @@ li{
   }
   .item-lists{
     display:flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     margin-top:60px;
   }
   .item-info{
@@ -137,4 +137,41 @@ li{
   .wrap{
     overflow: hidden;
   }
-  
+  @media screen and (max-width: 500px){
+    .item-lists{
+      margin-right:50px;
+      flex-direction: column;
+    }
+    .list{
+      margin-right:6px;
+      
+    }
+    .a{
+      width:100vw;
+      height:200px;
+    }
+    .item-img,.febrary-icon {
+      width: 55vh;
+      height: 43vh;
+    }
+    
+    .item-info{
+      height:60px;
+      font-size:20px;
+      line-height: 60px;
+    }
+    .nam{
+      margin-left:20px;
+      margin-top:40px;
+      
+    }
+    .log{
+      margin-left:3px;
+      margin-top:80px;
+      text-decoration: none;
+      font-size:20px;
+    }
+    .men{
+      margin-top:20px;
+    }
+   }

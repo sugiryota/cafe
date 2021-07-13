@@ -82,14 +82,49 @@
       <div class='item-lists'>
         <div class='list'>
           <%= link_to root_path,class:"link" do %>
-          <h2>7月</h2>
+          <h2><%= @dayy%>月</h2>
           <div class='item-img-content'>
-            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/" %>
-                 
+            <% case @dayy %>
+            <%when 1 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/2" %>
+            
+            <% when 2 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/3" %>
+            
+            <% when 3 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/4" %>
+            <% when 4 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/5" %>
+           
+            <% when 5 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/6" %>
+          
+            <% when 6 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/7" %>
+           
+            <% when 7 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/8" %>
+           
+            <% when 8 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/9" %>
+           
+            <% when 9 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/10" %>
+         
+            <% when 10 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/11" %>
+         
+            <% when 11 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/12" %>
+            
+            <% when 12 %>
+            <%= link_to image_tag("coffee.jpg", class:"febrary-icon"), "/items/alway/13" %>
+            <%end %>
           </div>  
         </div>
         <%end%>
       </div>
+      
           
           
           

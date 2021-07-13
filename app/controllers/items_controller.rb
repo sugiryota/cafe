@@ -1,7 +1,8 @@
 class ItemsController < ApplicationController
-
+  require 'date'
   def index
-    
+    day=Date.today
+    @dayy=day.month
   end
   def alway
     @coffee = Item.where(alway_id: '2',online_id: '3')
@@ -11,6 +12,12 @@ class ItemsController < ApplicationController
     @desert= Item.where(alway_id: '6',online_id: '3')
     @alway = params[:alway_id]
   end
+
+  def month
+    @July= Item.where(category_id: '8',online_id: '3')
+    @month= params[:category_id]
+  end
+
   def show
     @item = Item.find(params[:id])
   end

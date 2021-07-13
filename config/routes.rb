@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :maps, only: [:index]
 
   get 'items/alway/:alway_id' => 'items#alway'
+  get 'items/month/:category_id' => 'items#month'
 end

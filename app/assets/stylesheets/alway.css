@@ -39,3 +39,34 @@
   margin-bottom:30px;
 }
 
+
+
+
+
+.month-menu{
+  margin-top:60px;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  font-size:20px;
+  
+}
+.month-food{
+  display:flex;
+  flex-direction: column;
+}
+.month-img{
+  width:400px;
+  height:250px;
+}
+
+.month-menu>.mep{
+  text-align:center;
+  margin-bottom:55px;
+}
+.favorite h1{
+  font-weight: lighter;
+  text-align:center;
+}
+

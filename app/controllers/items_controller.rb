@@ -15,7 +15,18 @@ class ItemsController < ApplicationController
   end
 
   def month
+    @January = Item.where(category_id: '2', online_id: '3')
+    @febrary = Item.where(category_id: '3', online_id: '3')
+    @march = Item.where(category_id: '4', online_id: '3')
+    @april = Item.where(category_id: '5', online_id: '3')
+    @may = Item.where(category_id: '6', online_id: '3')
+    @June = Item.where(category_id: '7', online_id: '3')
     @July = Item.where(category_id: '8', online_id: '3')
+    @auguest = Item.where(category_id: '9', online_id: '3')
+    @september = Item.where(category_id: '10', online_id: '3')
+    @octorber = Item.where(category_id: '11', online_id: '3')
+    @november = Item.where(category_id: '12', online_id: '3')
+    @december = Item.where(category_id: '12', online_id: '3')
     @month = params[:category_id]
   end
 

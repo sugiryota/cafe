@@ -1,0 +1,229 @@
+<% if @month=="2" %>
+<div class="favorite">
+  <h1>1月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @January.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="3" %>
+<div class="favorite">
+  <h1>2月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @febrary.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="4" %>
+<div class="favorite">
+  <h1>3月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @march.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="5" %>
+<div class="favorite">
+  <h1>4月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @april.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="6" %>
+<div class="favorite">
+  <h1>5月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @may.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="7" %>
+<div class="favorite">
+  <h1>6月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @June.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="8" %>
+<div class="favorite">
+  <h1>7月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @July.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="9" %>
+<div class="favorite">
+  <h1>8月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @auguest.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="10" %>
+<div class="favorite">
+  <h1>9月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @september.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="11" %>
+<div class="favorite">
+  <h1>10月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @octorber.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="12" %>
+<div class="favorite">
+  <h1>11月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @november.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+<% if @month=="13" %>
+<div class="favorite">
+  <h1>12月のおすすめ</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @december.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%end%>
+

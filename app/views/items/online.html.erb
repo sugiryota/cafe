@@ -1,0 +1,25 @@
+<%=render "shared/header"%>
+<div class="favorite">
+  <h1>オンライン販売</h1>
+</div> 
+<div class="moth"> 
+  <div class="month-menu">
+    <% @online.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%=link_to item_path(food.id),class:"online-food" do %>
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+          <%end%>
+        </div> 
+      </div>  
+    <%end%>
+  </div>
+</div>
+<%=render "shared/footer"%>
+
+
+
+

@@ -60,25 +60,21 @@
 <%end%>
 
 <% if @alway=="5" %>
-<div class="drink">
+<div class="favorite">
   <h1>FOODS</h1>
 </div> 
-<div class="menu"> 
-  <div class="coffee">
-    <div class="na">FOOD</div>
-    <%= link_to image_tag("food.png", class:"item-i"), "/items/alway/5" %> <br/>
-    <%= link_to image_tag("humberger.jpg", class:"item-i"), "/items/alway/5" %> 
-  </div>
-  <div class="menu-d">
-    <%@food.each do |food|%>
-      <div class="mepr">
-        <div class="me">
-          <%= link_to food.name,item_path(food.id),class:"mena" %>
-          
+<div class="moth"> 
+  <div class="month-menu">
+    <% @food.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%=link_to item_path(food.id),class:"online-food" do %>
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+          <%end%>
         </div> 
-        <div class="price"> 
-          <span class="pr">¥<%=food.price%></span>
-        </div>
       </div>  
     <%end%>
   </div>
@@ -86,24 +82,21 @@
 
 <%end%>
 <% if @alway=="6" %>
-<div class="drink">
+<div class="favorite">
   <h1>DESERTS</h1>
 </div> 
-<div class="menu"> 
-  <div class="coffee">
-    <div class="na">DESERT</div>
-    <%= link_to image_tag("cake.png", class:"item-img"), "/items/alway/6" %> 
-  </div>
-  <div class="menu-d">
-    <%@desert.each do |desert|%>
-      <div class="mepr">
-        <div class="me">
-          <%= link_to desert.name,item_path(desert.id),class:"mena" %>
-          
+<div class="moth"> 
+  <div class="month-menu">
+    <% @desert.each do |food|%>
+      <div class="mep">
+        <div class="month-food">
+          <%=link_to item_path(food.id),class:"online-food" do %>
+          <%= image_tag food.image, class: "month-img"  %> 
+          <div class="food-name"><%= food.name%></div>
+          <div class="month-price"><span class="pr">¥<%=food.price%></span></div>
+          <div class="food-text"><%=food.text%></div>
+          <%end%>
         </div> 
-        <div class="price"> 
-          <span class="pr">¥<%=desert.price%></span>
-        </div>
       </div>  
     <%end%>
   </div>

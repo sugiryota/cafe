@@ -17,7 +17,7 @@
 </table>
 </div>
 <%if @item.online_id== 2 %>
-  <h1>ニコニコ</h1>
+  <%= link_to "購入画面に進む", pays_path(@item.id) ,class:"item-red-btn"%>
 <%end%>
 <%=render "shared/footer"%>
             

@@ -4,6 +4,8 @@ class Item < ApplicationRecord
   belongs_to :alway
   belongs_to :online
 
+  has_one :pay
+
   belongs_to :user
 
   validates :name, :text, :price, :online_id, :image, presence: true

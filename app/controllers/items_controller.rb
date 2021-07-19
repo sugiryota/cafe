@@ -30,6 +30,10 @@ class ItemsController < ApplicationController
     @month = params[:category_id]
   end
 
+  def all_month
+
+  end
+
   def online
     @online = Item.where( online_id: '2')
  

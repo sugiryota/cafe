@@ -31,7 +31,7 @@ class ItemsController < ApplicationController
   end
 
   def all_month
-
+    
   end
 
   def online

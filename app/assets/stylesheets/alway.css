@@ -69,4 +69,12 @@
   font-weight: lighter;
   text-align:center;
 }
+.all-contents{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.all-content{
+  width:33vw;
+}
 

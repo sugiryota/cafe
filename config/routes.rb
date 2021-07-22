@@ -11,8 +11,10 @@ Rails.application.routes.draw do
     end
   end
   resources :maps, only: [:index]
+  resources :abouts, only: [:index]
   
 
   get 'items/alway/:alway_id' => 'items#alway'
   get 'items/month/:category_id' => 'items#month'
+  
 end

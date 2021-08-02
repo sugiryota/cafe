@@ -54,7 +54,11 @@
 }
 .month-food{
   display:flex;
-  flex-direction: column;
+  flex-direction: column; 
+}
+.online-food{
+  text-decoration: none;
+  color:black;
 }
 .month-img{
   width:400px;

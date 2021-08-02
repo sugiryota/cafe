@@ -1,0 +1,43 @@
+.transaction-title-text{
+  text-align:center;
+}
+.buy-item-img{
+  width:500px;
+  height:300px;
+  display:block;
+  margin:50px auto;
+}
+.transaction-main{
+  text-align:center;
+}
+.input-default{
+  width:300px;
+  padding:10px;
+  margin:15px 0;
+}
+.form-text-wrap{
+  display:block;
+  margin:10px 0;
+}
+.select-box{
+  width:300px;
+  height:20px;
+}
+.indispensable {
+  font-size:10px;
+  color:red;
+}
+.form-any{
+  font-size:10px;
+  color:blue;
+}
+.input-expiration-date{
+  width:100px;
+  height:40px;
+  line-height:40px;
+}
+.input-name{
+  width:200px;
+  height:40px;
+  line-height:40px;
+}
